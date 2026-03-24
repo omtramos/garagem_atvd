@@ -7,4 +7,4 @@ class Modelo(models.Model):
     categoria = models.CharField(max_length=80, blank=True, null=True)
 
     def __str__(self):
-        return self.nome
+        return f"{self.id} - {self.marca} - {self.nome}"
